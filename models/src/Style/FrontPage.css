@@ -5,6 +5,10 @@
     justify-content: center;
     height: 100vh; /* Full screen height */
     text-align: center;
+    background-image: url('../../Assets/frontend.jpeg'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
   }
   
   .gradient-text {
@@ -39,6 +43,7 @@
   .subtitle {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #666; /* Subtle text color for the subtitle */
+    color: #edf5f5; /* Subtle text color for the subtitle */
+    opacity: 0.6;
   }
   

@@ -1,0 +1,27 @@
+/* src/components/Header/Header.css */
+header {
+  margin-top: 20px; /* Adjust based on your design */
+  margin-left: 50rem; /* Adjust based on your design */
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  -webkit-background-clip: text;
+  color: transparent; /* Makes the text color transparent to show the gradient */
+  position: relative;
+  margin-left: 10rem;
+  margin-top: 10rem; /* Adjust based on your design */
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Adjust based on your design */
+  left: 0;
+  right: 0;
+  height: 4px; /* Thickness of the gradient line */
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  border-radius: 2px;
+}

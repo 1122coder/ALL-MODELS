@@ -1,0 +1,27 @@
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ensures buttons are spaced out evenly */
+  padding: 20px;
+}
+
+.button-container button {
+  flex: 1 1 calc(33.333% - 40px); /* Ensures three buttons per row with spacing */
+  margin: 10px;
+  padding: 10px 50px;
+  font-size: 1.45rem;
+  font-weight: 600;
+  background-color: #f0f0f0; /* Default light color, individual colors will be set inline */
+  border: none;
+  border-radius: 20px; /* Rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Example individual colors for each button, adjust as per your preference */
+.button-container button:nth-child(1) { background-color: #FFD1DC; } /* Gemini */
+.button-container button:nth-child(2) { background-color: #B5EAEA; } /* Palm */
+.button-container button:nth-child(3) { background-color: #FFC8DD; } /* GPT */
+.button-container button:nth-child(4) { background-color: #FAD2E1; } /* Claude 2 */
+.button-container button:nth-child(5) { background-color: #C5E0D8; } /* LLama */
+.button-container button:nth-child(6) { background-color: #DBEBC2; } /* GPTJ */

@@ -1,0 +1,67 @@
+.palm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .conversation-box {
+    width: 75%;
+    height: 68vh; /* Adjust based on your needs */
+    margin: 20px auto 20px; /* Ensures consistent margin */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 10px;
+    border: 2px solid #4aec8d; /* Bold border with a color of your choice */
+    box-shadow: 0px 4px 8px rgba(42, 39, 39, 0.1); /* Shadow for depth */
+  }
+  
+  .input-container {
+    display: flex;
+    width: 75%; /* Matching the conversation box for alignment */
+    margin: 0 auto; /* Centering the container */
+  }
+  
+  .text-input, .send-button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: 2px solid #4aec8d;
+    font-size: 1rem; /* Ensures text size is consistent */
+  }
+  
+  .text-input {
+    border-radius: 20px 0 0 20px; /* Rounded corners on the left */
+    border-right: none; /* Removes the border between the input and button */
+  }
+  
+  .send-button {
+    border-radius: 0 20px 20px 0; /* Rounded corners on the right */
+    background-color: #76e076;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Ensures the button flexes no more than necessary to accommodate text */
+  .send-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+  .user-msg {
+    background-color: #9df3b7;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 80%;
+    margin-left: auto; /* Align to right */
+  }
+  
+  /* Styles for Gemini responses */
+  .palm-msg {
+    background-color: #e6eceb;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 80%;
+  }

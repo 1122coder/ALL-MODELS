@@ -11,6 +11,7 @@
   padding: 10px 50px;
   font-size: 1.45rem;
   font-weight: 600;
+  color: black;
   background-color: #f0f0f0; /* Default light color, individual colors will be set inline */
   border: none;
   border-radius: 20px; /* Rounded edges */

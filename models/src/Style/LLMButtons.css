@@ -1,28 +1,49 @@
 .button-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Ensures buttons are spaced out evenly */
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns with equal width */
+  gap:50px 10px; /* Space between grid items */
+  /* padding: 60px; */
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-top: 5%;
+  /* border: 2px solid white; */
+  border-radius: 25px;
+  width: 90%;
+  margin-left: 1%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #53364D;
+
 }
 
 .button-container button {
-  flex: 1 1 calc(33.333% - 40px); /* Ensures three buttons per row with spacing */
-  margin: 10px;
-  padding: 10px 50px;
-  font-size: 1.45rem;
+  /* padding: 15px 20px;  */
+  font-size: 1.2rem;
   font-weight: 600;
-  color: black;
-  background-color: #f0f0f0; /* Default light color, individual colors will be set inline */
+  width: 70%;
+  height: 100%;
+  margin-left: 10%;
+  color: #fff;
+  background: linear-gradient(to right, #6e45e2, #88d3ce); /* Gradient effect */
   border: none;
-  border-radius: 20px; /* Rounded edges */
+  border-radius: 10px; /* Adjust for rounded edges */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10%;
 }
 
-/* Example individual colors for each button, adjust as per your preference */
-.button-container button:nth-child(1) { background-color: #FFD1DC; } /* Gemini */
-.button-container button:nth-child(2) { background-color: #B5EAEA; } /* Palm */
-.button-container button:nth-child(3) { background-color: #FFC8DD; } /* GPT */
-.button-container button:nth-child(4) { background-color: #FAD2E1; } /* Claude 2 */
-.button-container button:nth-child(5) { background-color: #C5E0D8; } /* LLama */
-.button-container button:nth-child(6) { background-color: #DBEBC2; } /* GPTJ */
+/* Additional styles for hover effects, focus, etc., if needed */
+.button-container button:hover {
+ opacity: 0.6;
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.button-container button:nth-child(1){
+ 
+}

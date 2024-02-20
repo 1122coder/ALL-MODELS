@@ -1,49 +1,81 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full screen height */
-    text-align: center;
-    background-image: url('../../Assets/frontend.jpeg'); /* Path to your image */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-  }
-  
-  .gradient-text {
-    font-weight: 900; /* Increased boldness */
-    font-size: 3em; /* Increased font size */
-    text-transform: uppercase; /* UPPERCASE text */
-    background: linear-gradient(to right, #6e45e2, #88d3ce); /* Gradient effect */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-  }
-  
-  @keyframes typing {
-    0%, 100% { width: 0; }
-    50% { width: 100%; }
-  }
-  
-  @keyframes blink-caret {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
-  }
-  
-  .animated-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: .15em; /* Adjust spacing between letters */
-    animation: typing 6s steps(14, end) infinite, blink-caret 1s step-end infinite;
-  }
-  
-  .subtitle {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #edf5f5; /* Subtle text color for the subtitle */
-    opacity: 0.6;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  text-align: center;
+  background-image: url('../../Assets/frontend.jpeg'); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.gradient-text {
+  font-size: 3em; /* Increased font size */
+  background: linear-gradient(to right, #6e45e2, #88d3ce); /* Gradient effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .15em; /* Adjust spacing between letters */
+  animation: typing 6s steps(14, end) infinite, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  0%, 100% { width: 0; }
+  50% { width: 100%; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #edf5f5; /* Subtle text color for the subtitle */
+  opacity: 0.8;
+}
+.button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #6e45e2, #88d3ce); /* Gradient effect */
+  color: white; /* Text color */
+  font-size: 20px; /* Adjust font size as needed */
+  border-radius: 25px; /* Rounded corners */
+  border: none; /* Remove border */
+  font-weight: bolder;
+  display: inline-flex;
+  align-items: center;
+  width: 15%;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.button:hover {
+  /* background-color: #009ACD; */
+  opacity:0.9;
+  color: white; /* Text color on hover */
+}
+
+.button .arrow {
+  display: inline-block;
+  margin-left: 20px; /* Space between text and arrow */
+  transition: transform 0.3s ease; /* Transition for moving arrow on hover */
+  font-size: 30px; /* Larger size */
+  font-weight: bold; /* Bold style */
+}
+
+.button:hover .arrow {
+  transform: translateX(5px); /* Move arrow to the right on hover */
+}
